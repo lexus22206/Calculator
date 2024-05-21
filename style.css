@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(26, 26, 26, 0.95);
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 55px;
+    font-family: cursive;
+    letter-spacing: 5px;
+    color: antiquewhite;
+}
+
+.grup-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-a, .input-b {
+    width: 160px;
+    height: 36px;
+    border-radius: 14px;
+    border: none;
+    padding: 0 25px;
+    font-size: 22px;
+    margin: 0 auto 15px;
+}
+
+.input-a::-webkit-inner-spin-button,
+.input-b::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.grup-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grup-btn__operation {
+    width: 40%;
+    height: 36px;
+    border-radius: 15px;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    color: antiquewhite;
+    margin-bottom: 15px;
+}
+
+.grup-btn__operation_sum, .grup-btn__operation_multiply {
+    background-color: green;
+    transition: all .5s ease;
+}
+
+.grup-btn__operation_sum:hover, .grup-btn__operation_multiply:hover {
+    background-color: rgb(2, 71, 2);
+}
+
+.grup-btn__operation_substract, .grup-btn__operation_divison {
+    background-color: red;
+    transition: all .5s ease;
+}
+
+.grup-btn__operation_substract:hover, .grup-btn__operation_divison:hover {
+    background-color: rgb(120, 3, 3);
+}
+
+.btn-result {
+    width: 95%;
+    height: 36px;
+    border-radius: 15px;
+    border-color: color(rec2020 0.33 0.29 0.88);
+    color: color(rec2020 0.33 0.29 0.88);
+    transition: all 0.5s ease;
+}
+
+.btn-result:hover {
+    background-color: color(rec2020 0.33 0.29 0.88);
+    color: #fff;
+    
+}
+
+.result-field {
+    width: 95%;
+    height: 100px;
+    background-color: antiquewhite;
+    margin: 15px auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+/* responsive */
+
+@media (max-width: 640px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
