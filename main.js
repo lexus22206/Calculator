@@ -1,5 +1,5 @@
 const inputA = document.querySelector('.input-a'),
-      
+      inputB = document.querySelector('.input-b'),
       btnOperation = document.querySelectorAll('.grup-btn__operation'),
       btnResult = document.querySelector('.btn-result'),
       resultField = document.querySelector('.result-field');
@@ -14,7 +14,7 @@ btnOperation.forEach(button => {
 
 btnResult.onclick = function() {
     const a = Number(inputA.value); 
-     
+    const b = Number(inputB.value); 
 
     if (selectedOperation === null) {
         resultField.innerHTML = 'Оберіть операцію';
