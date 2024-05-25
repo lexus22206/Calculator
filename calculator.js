@@ -1,8 +1,8 @@
 const OPERATIONS = {
     sum: '+',
-    substract: '-',
+    subtract: '-',
     multiply: '*',
-    divison: '/'
+    division: '/'
 }
 
 function calculate({a, b, operation}) {
@@ -11,16 +11,19 @@ function calculate({a, b, operation}) {
         case OPERATIONS.sum:
             result = sum(a, b);
             break;
-        case OPERATIONS.substract:
-            result = substract(a, b);
+        case OPERATIONS.subtract:
+            result = subtract(a, b);
             break;
         case OPERATIONS.multiply:
             result = multiply(a, b);
             break;
-        case OPERATIONS.divison:
-            result = divison(a, b);
+        case OPERATIONS.division:
+            if (b !== 0) {
+                result = division(a, b);
+            } else {
+                result = 'Ділення на нуль!'
+            }
             break;
-    
         default:
             break;
     }

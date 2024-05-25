@@ -19,36 +19,53 @@ body {
     color: antiquewhite;
 }
 
-.grup-input {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-a, .input-b {
-    width: 160px;
+.input-display {
+    width: 85%;
     height: 36px;
     border-radius: 14px;
     border: none;
     padding: 0 25px;
     font-size: 22px;
-    margin: 0 auto 15px;
+    margin: 0 auto 55px;
 }
 
-.input-a::-webkit-inner-spin-button,
-.input-b::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.grup-digit {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.btn-result, .btn-clear, .btn-digit {
+    width: 56px;
+    height: 56px;
+    border-radius: 15px;
+    border-color: color(rec2020 0.33 0.29 0.88);
+    color: color(rec2020 0.33 0.29 0.88);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.btn-result:hover, .btn-clear:hover, .btn-digit:hover {
+    background-color: color(rec2020 0.33 0.29 0.88);
+    color: antiquewhite;
+    
 }
 
 .grup-btn {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;    
 }
 
-.grup-btn__operation {
-    width: 40%;
-    height: 36px;
+.grup-operation {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.btn-operation {
+    width: 56px;
+    height: 56px;
     border-radius: 15px;
     border: none;
     font-size: 22px;
@@ -58,47 +75,31 @@ body {
     margin-bottom: 15px;
 }
 
-.grup-btn__operation_sum, .grup-btn__operation_multiply {
+.btn-operation_sum, .btn-operation_multiply {
     background-color: green;
     transition: all .5s ease;
 }
 
-.grup-btn__operation_sum:hover, .grup-btn__operation_multiply:hover {
+.btn-operation_sum:hover, .btn-operation_multiply:hover {
     background-color: rgb(2, 71, 2);
 }
 
-.grup-btn__operation_substract, .grup-btn__operation_divison {
+.btn-operation_subtract, .btn-operation_division {
     background-color: red;
     transition: all .5s ease;
 }
 
-.grup-btn__operation_substract:hover, .grup-btn__operation_divison:hover {
+.btn-operation_subtract:hover, .btn-operation_division:hover {
     background-color: rgb(120, 3, 3);
 }
 
-.btn-result {
-    width: 95%;
-    height: 36px;
-    border-radius: 15px;
-    border-color: color(rec2020 0.33 0.29 0.88);
-    color: color(rec2020 0.33 0.29 0.88);
-    transition: all 0.5s ease;
+.grup-controls {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    gap: 20px;
 }
 
-.btn-result:hover {
-    background-color: color(rec2020 0.33 0.29 0.88);
-    color: #fff;
-    
-}
-
-.result-field {
-    width: 95%;
-    height: 100px;
-    background-color: antiquewhite;
-    margin: 15px auto;
-    border-radius: 15px;
-    padding: 20px;
-}
 
 
 /* responsive */

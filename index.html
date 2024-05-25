@@ -9,18 +9,32 @@
 <body>
     <div class="container">
         <h1 class="title">Калькулятор</h1>
-        <div class="grup-input">
-            <input class="input-a" type="number" name="" id="input-a">
-            <input class="input-b" type="number" name="" id="input-b">
-        </div>
+        <input class="input-display" type="text" id="input-equation">
         <div class="grup-btn">
-            <button class="grup-btn__operation grup-btn__operation_sum" value="+">+</button>
-            <button class="grup-btn__operation grup-btn__operation_substract" value="-">-</button>
-            <button class="grup-btn__operation grup-btn__operation_multiply" value="*">*</button>
-            <button class="grup-btn__operation grup-btn__operation_divison" value="/">/</button>
+            <div class="grup-digit">
+                <button class="btn-digit" value="1">1</button>
+                <button class="btn-digit" value="2">2</button>
+                <button class="btn-digit" value="3">3</button>
+                <button class="btn-digit" value="4">4</button>
+                <button class="btn-digit" value="5">5</button>
+                <button class="btn-digit" value="6">6</button>
+                <button class="btn-digit" value="7">7</button>
+                <button class="btn-digit" value="8">8</button>
+                <button class="btn-digit" value="9">9</button>
+                <button class="btn-digit" value="0">0</button>
+                <div class="grup-controls">
+                    <button class="btn-result" id="btn-result">=</button>
+                    <button class="btn-clear" id="btn-clear">C</button>
+                </div>
+            </div>
+            <div class="grup-operation">
+                <button class="btn-operation btn-operation_sum" value="+">+</button>
+                <button class="btn-operation btn-operation_subtract" value="-">-</button>
+                <button class="btn-operation btn-operation_multiply" value="*">*</button>
+                <button class="btn-operation btn-operation_division" value="/">/</button>
+            </div>
         </div>
-        <button class="btn-result" id="btn-result">Результат</button>
-        <p class="result-field" id="result-field"></p>
+        
     </div>
 
     <script src="math.js"></script>
